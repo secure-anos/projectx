@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trending / PROJECT X</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icon.svg">
+</head>
+
+<header class="site-header">
+    <div class="logo">
+        <a href="index.html">PROJECT X</a>
+    </div>
+    <header>
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index2.html">About</a></li>
+                <li><a href="index3.html">Trending</a></li>
+            </ul>
+        </nav>
+    </header>
+</header>
+
+<body>
+    <h1>Checkout the Trending videos.... </h1>
+    <!-- Video Player Section -->
+    <div class="video-section">
+        <video id="videoPlayer" controls>
+            <source id="videoSource" src="" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="video-controls">
+            <button id="downloadButton">Download Video</button>
+        </div>
+    </div>
+
+    <!-- Uploaded Videos Section -->
+    <div class="uploaded-videos">
+        <h2>Trending Videos</h2>
+        <div id="videoList" class="video-list">
+            <!-- Video items will be added here dynamically -->
+        </div>
+    </div>
+    <div>
+        <footer>
+            <div class="footer-content">
+                <div class="footer-left">
+                    <p>&copy; 2024 PROJECTX . All rights reserved.</p>
+                </div>
+            </div>
+            <div class="subscribe-container">
+                <p>Subscribe to our Site:</p>
+                <p>Powered by <a href="blogpost.html">PROJECTX</a></p>
+                <div class="sub-input">
+                    <input type="email" id="email-input" placeholder="Enter your email" />
+                    <button class="subscribe-button" onclick="subscribe()">Subscribe</button>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="script2.js"></script>
+</body>
+
+</html>

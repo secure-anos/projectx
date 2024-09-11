@@ -1,0 +1,435 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rajdhani:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+/* General Styling */
+body {
+  font-family: "Rajdhani", sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1 {
+  font-family: "Rajdhani", sans-serif;
+  text-align: center;
+}
+
+.header {
+  background-color: #000000; /* Background color of the header */
+  padding: 20px 0; /* Padding for the top and bottom */
+  display: flex; /* Enable flexbox */
+  justify-content: right;
+}
+
+/* Navbar styling */
+.navbar {
+  background-color: #000000; /* Background color of the navbar */
+  padding: 15px 0; /* Padding for the top and bottom */
+  display: flex; /* Enable flexbox */
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+}
+
+/* Nav-list styling */
+.nav-list {
+  list-style: none; /* Remove default list styling */
+  padding: 0;
+  margin: 0;
+  display: flex; /* Enable flexbox for the list */
+}
+
+/* Nav-list item styling */
+.nav-list li {
+  margin: 0 15px; /* Space between list items */
+}
+
+/* Link styling */
+.nav-list a {
+  text-decoration: none; /* Remove underline from links */
+  color: white; /* White text color */
+  font-size: 18px; /* Font size for the links */
+  transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition for transform and color */
+  display: inline-block; /* Ensure the transform effect is applied correctly */
+}
+
+/* Zoom-out effect on hover */
+.nav-list a:hover {
+  transform: scale(1.5); /* Zoom out by reducing the size to 90% */
+  color: #f80000; /* Change color on hover */
+}
+
+.text {
+  text-align: center;
+}
+.logo {
+  font-size: 24px;
+
+  cursor: pointer;
+  transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition for transform and color */
+}
+.logo:hover {
+  transform: scale(1.5); /* Slightly enlarge smoothly */
+  color: #ff0000; /* Change color on hover */
+}
+
+/* Video Player Section */
+.video-section {
+  padding: 20px;
+  text-align: center;
+}
+
+.video-section video {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 8px;
+}
+
+.video-controls {
+  margin-top: 10px;
+}
+
+.video-controls button {
+  background-color: #5801e3;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.video-controls button:hover {
+  background-color: #009dff;
+}
+
+/* Uploaded Videos Section */
+.uploaded-videos {
+  padding: 20px;
+}
+
+.uploaded-videos h2 {
+  margin-bottom: 10px;
+}
+
+.video-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.video-item {
+  width: calc(25% - 20px);
+  max-width: 200px;
+  box-sizing: border-box;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.video-item img {
+  width: 100%;
+  height: auto;
+}
+
+.video-item .video-title {
+  padding: 10px;
+  font-size: 16px;
+  color: #333;
+  overflow: hidden;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .video-item {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .video-item {
+    width: 100%;
+  }
+}
+
+.openbtn {
+  font-size: 30px;
+  cursor: pointer;
+  background-color: #333;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #000000;
+  color: white;
+}
+
+.logo a {
+  text-decoration: none;
+  font-size: 24px;
+  color: white;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.content {
+  padding: 20px;
+}
+
+.content h1 {
+  color: #000000;
+}
+
+footer {
+  background-color: #000000;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-content {
+  display: center;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-left,
+.footer-middle,
+.footer-right {
+  margin: 10px;
+}
+
+/* Image container styling */
+.image-container {
+  display: flex;
+  align-items: center;
+}
+
+.footer-image {
+  height: 150px; /* Adjust height as needed */
+  margin-right: 20px; /* Space between image and text */
+}
+/* Image styling */
+.resize-image {
+  height: 100px; /* Set the height to 200px */
+  width: auto; /* Maintain aspect ratio */
+}
+
+main {
+  padding: 20px;
+}
+
+.stories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.story {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.story h2 {
+  margin-top: 0;
+}
+
+.story p {
+  font-size: 14px;
+  color: #222222;
+}
+
+button {
+  background-color: #00ff40;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+button:hover {
+  background-color: #b31800;
+}
+
+.download-btn {
+  background-color: #7628a7;
+}
+
+.download-btn:hover {
+  background-color: #2fb04b;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding-top: 60px;
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 5% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 800px;
+  border-radius: 8px;
+}
+
+.close-btn {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.search-container {
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+  align-items: center;
+  align-self: center;
+  justify-content: center;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+}
+
+input[type="text"] {
+  width: 80%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+}
+
+button {
+  padding: 10px;
+  background-color: #000000;
+  color: white;
+  font-size: 16px;
+  border: 1px solid #333;
+  border-left: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+#blog-list article {
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+}
+
+#blog-form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+#blog-form label,
+#blog-form input,
+#blog-form textarea {
+  margin-bottom: 10px;
+}
+
+#blog-form button {
+  padding: 10px;
+  background: #000000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.button2 {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button2:hover {
+  background-color: #0d3f75;
+  transform: scale(1.1); /* Slightly enlarge smoothly */
+}
+
+.logo {
+  font-size: 24px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.logo:hover {
+  transform: scale(1.25); /* Slightly enlarge smoothly */
+  color: #ff0000; /* Change color on hover */
+}
+
+.center-div {
+  text-align: center; /* Center text inside the div */
+  color: white; /* Text color */
+  font-size: 18px; /* Font size */
+}
+
+.subscribe-button {
+  background-color: #007bff;
+}
+.subscribe-button:hover {
+  background-color: #cb1f1f;
+}
